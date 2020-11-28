@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="06f07213-5136-481e-980c-99c9f26f9e25" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -57,10 +48,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -135,17 +127,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,7 +276,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515621994762</updated>
-      <workItem from="1606349979618" duration="20432000" />
+      <workItem from="1606349979618" duration="21192000" />
+      <workItem from="1606523996227" duration="858000" />
     </task>
     <servers />
   </component>
@@ -311,54 +293,71 @@
       <screen x="-1360" y="32" width="1360" height="768" />
     </state>
     <state x="-1055" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606510261247" />
+    <state x="188" y="0" key="CommitChangelistDialog2" timestamp="1606517472217">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="188" y="0" key="CommitChangelistDialog2/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517472217" />
     <state width="418" height="438" key="DebuggerActiveHint" timestamp="1606502018012">
       <screen x="-1360" y="55" width="1360" height="705" />
     </state>
     <state width="418" height="438" key="DebuggerActiveHint/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606502018012" />
-    <state width="1318" height="248" key="GridCell.Tab.0.bottom" timestamp="1606514180024">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.0.bottom" timestamp="1606517969941">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="248" key="GridCell.Tab.0.bottom/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514180024" />
+    <state width="1318" height="340" key="GridCell.Tab.0.bottom/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969941" />
     <state width="1318" height="250" key="GridCell.Tab.0.bottom/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606503730330" />
-    <state width="1318" height="248" key="GridCell.Tab.0.center" timestamp="1606514180022">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.0.center" timestamp="1606517969940">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="248" key="GridCell.Tab.0.center/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514180022" />
+    <state width="1318" height="340" key="GridCell.Tab.0.center/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969940" />
     <state width="1318" height="250" key="GridCell.Tab.0.center/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606503730328" />
-    <state width="1318" height="248" key="GridCell.Tab.0.left" timestamp="1606514180021">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.0.left" timestamp="1606517969939">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="248" key="GridCell.Tab.0.left/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514180021" />
+    <state width="1318" height="340" key="GridCell.Tab.0.left/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969939" />
     <state width="1318" height="250" key="GridCell.Tab.0.left/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606503730327" />
-    <state width="1318" height="248" key="GridCell.Tab.0.right" timestamp="1606514180023">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.0.right" timestamp="1606517969940">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="248" key="GridCell.Tab.0.right/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514180023" />
+    <state width="1318" height="340" key="GridCell.Tab.0.right/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969940" />
     <state width="1318" height="250" key="GridCell.Tab.0.right/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606503730329" />
-    <state width="1318" height="340" key="GridCell.Tab.1.bottom" timestamp="1606514127395">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.1.bottom" timestamp="1606517969944">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="340" key="GridCell.Tab.1.bottom/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514127395" />
+    <state width="1318" height="340" key="GridCell.Tab.1.bottom/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969944" />
     <state width="1318" height="360" key="GridCell.Tab.1.bottom/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606502378275" />
-    <state width="1318" height="340" key="GridCell.Tab.1.center" timestamp="1606514127391">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.1.center" timestamp="1606517969943">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="340" key="GridCell.Tab.1.center/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514127391" />
+    <state width="1318" height="340" key="GridCell.Tab.1.center/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969943" />
     <state width="1318" height="360" key="GridCell.Tab.1.center/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606502378274" />
-    <state width="1318" height="340" key="GridCell.Tab.1.left" timestamp="1606514127390">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.1.left" timestamp="1606517969942">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="340" key="GridCell.Tab.1.left/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514127390" />
+    <state width="1318" height="340" key="GridCell.Tab.1.left/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969942" />
     <state width="1318" height="360" key="GridCell.Tab.1.left/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606502378274" />
-    <state width="1318" height="340" key="GridCell.Tab.1.right" timestamp="1606514127392">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state width="1318" height="340" key="GridCell.Tab.1.right" timestamp="1606517969944">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1318" height="340" key="GridCell.Tab.1.right/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606514127392" />
+    <state width="1318" height="340" key="GridCell.Tab.1.right/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517969944" />
     <state width="1318" height="360" key="GridCell.Tab.1.right/-1360.55.1360.705/0.23.1280.777@-1360.55.1360.705" timestamp="1606502378274" />
-    <state x="-1171" y="55" key="SettingsEditor" timestamp="1606348435327">
-      <screen x="-1360" y="32" width="1360" height="768" />
+    <state x="124" y="37" key="SettingsEditor" timestamp="1606517404709">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="-1171" y="55" key="SettingsEditor/-1360.32.1360.768/0.0.1280.800@-1360.32.1360.768" timestamp="1606348435327" />
+    <state x="124" y="37" key="SettingsEditor/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517404709" />
+    <state x="292" y="116" key="Vcs.Push.Dialog.v2" timestamp="1606517540971">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="292" y="116" key="Vcs.Push.Dialog.v2/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1606517540971" />
     <state x="-1017" y="110" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606501239694">
       <screen x="-1360" y="55" width="1360" height="705" />
     </state>
