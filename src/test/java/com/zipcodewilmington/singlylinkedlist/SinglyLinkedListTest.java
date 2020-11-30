@@ -34,10 +34,13 @@ public class SinglyLinkedListTest {
         list.add(34);
         list.add(568);
         list.add(103);
-        list.remove(1);
+
+        boolean actual = list.remove(1);
 
         //Then
-
+        Assertions.assertTrue(actual);
+        Assertions.assertEquals(4, list.size());
+        Assertions.assertEquals(34, list.get(1));
     }
 
     @Test
@@ -114,17 +117,34 @@ public class SinglyLinkedListTest {
 
     @Test
     void copy() {
-    }
 
-    @Test
-    void sort() {
-    }
+        //When
+        list.add(16);
+        list.add(29);
+        list.add(34);
+        list.add(568);
+        list.add(103);
 
-    @Test
-    void reverse() {
+        SinglyLinkedList<Integer> newList = list.copy();
+
+        //Then
+        Assertions.assertEquals(list.get(3), newList.get(3));
+        Assertions.assertEquals(list.size(), newList.size());
+
     }
 
     @Test
     void slice() {
+        list.add(16);
+        list.add(29);
+        list.add(34);
+        list.add(568);
+        list.add(103);
+
+        SinglyLinkedList<Integer> newList = list.slice(2, list.size()-1);
+
+        //Then
+        Assertions.assertEquals(list.get(2), newList.get(0));
     }
+
 }

@@ -111,7 +111,7 @@ public class SinglyLinkedList<T> {
     //Insert method taking index
     public void insert(T data, int index) {
         //Create new node with passed data
-        Node<T> newNode = new Node(data);
+        Node<T> newNode = new Node<>(data);
 
         if (index == 0) {
             newNode.next = head;
@@ -145,6 +145,7 @@ public class SinglyLinkedList<T> {
         return (SinglyLinkedList<T>) null;
     }
 
+    //Not finished
     public void reverse() {
 //        ArrayList<T> reversed = new ArrayList<>();
 //        SinglyLinkedList<T> newList = new SinglyLinkedList<>();
@@ -174,7 +175,6 @@ public class SinglyLinkedList<T> {
 
     public SinglyLinkedList<T> slice(int start, int stop) {
         SinglyLinkedList<T> copy = new SinglyLinkedList<>();
-
 
         for (int i = start; i <= stop; i++) {
             copy.add(this.get(i));
