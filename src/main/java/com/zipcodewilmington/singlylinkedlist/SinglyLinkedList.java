@@ -1,27 +1,29 @@
 package com.zipcodewilmington.singlylinkedlist;
 
+import java.util.ArrayList;
+
 /**
  * Created by leon on 1/10/18.
  */
 public class SinglyLinkedList<T> {
 
     private Node<T> head;
-    private static int size = 0;
+    private int size;
 
     //Constructor
     public <T> SinglyLinkedList() {
+        this.size = 0;
     }
 
     //Methods
     public void add(T data) {
         //Create new node with passed data
-        Node<T> newNode = new Node (data);
+        Node<T> newNode = new Node<>(data);
 
-         //If list is empty it's set as Head.
+        //If list is empty it's set as Head.
         if (head == null) {
             head = newNode;
-        }
-        else {
+        } else {
             Node<T> current = head;
 
             //Iterate to end of list
@@ -47,8 +49,22 @@ public class SinglyLinkedList<T> {
         }
     }
 
-    public boolean remove(T data) {
+    public boolean remove(int index) {
+        if (index == 0) {
+            head = head.next;
+        } else {
+            Node<T> current = head;
+            Node<T> currentPlus1 = null;
+            //Iterate to index before given location or last
+            for (int i = 0; i < index - 1; i++) {
+                current = current.next;
+            }
+            currentPlus1 = current.next;
+            current.next = currentPlus1.next;
+            currentPlus1 = null;
+        }
 
+        decrementListCount();
         return true;
     }
 
@@ -56,7 +72,7 @@ public class SinglyLinkedList<T> {
         Node<T> current = head;
 
         for (int i = 0; i < size(); i++) {
-            if(current.data.equals(data)){
+            if (current.data.equals(data)) {
                 return true;
             }
             current = current.next;
@@ -68,7 +84,7 @@ public class SinglyLinkedList<T> {
         Node<T> current = head;
 
         for (int i = 0; i < size(); i++) {
-            if(current.data.equals(data)){
+            if (current.data.equals(data)) {
                 return i;
             }
             current = current.next;
@@ -77,7 +93,7 @@ public class SinglyLinkedList<T> {
     }
 
     public int size() {
-        return size;
+        return this.size;
     }
 
     public T get(int index) {
@@ -85,7 +101,7 @@ public class SinglyLinkedList<T> {
 
         for (int i = 0; i < index; i++) {
             current = current.next;
-            }
+        }
 
         return current.data;
     }
@@ -95,58 +111,83 @@ public class SinglyLinkedList<T> {
     //Insert method taking index
     public void insert(T data, int index) {
         //Create new node with passed data
-        Node<T> newNode = new Node (data);
-        Node<T> current = head;
+        Node<T> newNode = new Node(data);
 
-        //Iterate to index location or last
-        for (int i = 0; i < index - 1; i++) {
-            current = current.next;
+        if (index == 0) {
+            newNode.next = head;
+            head = newNode;
+        } else {
+            Node<T> current = head;
+            //Iterate to index before given location or last
+            for (int i = 0; i < index - 1; i++) {
+                current = current.next;
+            }
+
+            //Insert new node by giving it the current nodes next reference
+            //and setting the current nodes next reference to the newNode.
+            newNode.next = current.next;
+            current.next = newNode;
         }
-
-        //Insert new node by giving it the current nodes next reference
-        //and setting the current nodes next reference to the newNode.
-        newNode.next = current.next;
-        current.next = newNode;
-
         //Increment listCount
         incrementListCount();
     }
 
-    public SinglyLinkedList<T> copy(SinglyLinkedList<T> list) {
-        return (SinglyLinkedList<T>) null;
+    public SinglyLinkedList<T> copy() {
+        SinglyLinkedList<T> copy = new SinglyLinkedList<>();
+
+        for (int i = 0; i < this.size(); i++) {
+            copy.add(this.get(i));
+        }
+        return copy;
     }
 
     public SinglyLinkedList<T> sort(SinglyLinkedList<T> list) {
         return (SinglyLinkedList<T>) null;
     }
 
-    public SinglyLinkedList<T> reverse(SinglyLinkedList<T> list) {
-        return (SinglyLinkedList<T>) null;
+    public void reverse() {
+//        ArrayList<T> reversed = new ArrayList<>();
+//        SinglyLinkedList<T> newList = new SinglyLinkedList<>();
+        Node<T> current = this.head;
+        Node<T> prev = null;
+        Node<T> next = null;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        prev = this.head;
+
+//        for (int i = 0; i < this.size(); i++) {
+//            reversed.add(this.get(i));
+//        }
+//
+//        for (int i = 0; i < reversed.size(); i++) {
+//            newList.add(reversed.get(i));
+//        }
+//
+//        return newList;
+
     }
 
-    public SinglyLinkedList<T> slice(SinglyLinkedList<T> list, int start, int stop) {
-        return (SinglyLinkedList<T>) null;
-    }
+    public SinglyLinkedList<T> slice(int start, int stop) {
+        SinglyLinkedList<T> copy = new SinglyLinkedList<>();
 
-    //Getters and Setters
-    public Node<T> getHead() {
-        return head;
-    }
 
-    public static int getSize() {
-        return size;
-    }
-
-    public void setHead(Node<T> data) {
-        this.head = data;
+        for (int i = start; i <= stop; i++) {
+            copy.add(this.get(i));
+        }
+        return copy;
     }
 
     public void incrementListCount() {
-        size++;
+        this.size++;
     }
 
     public void decrementListCount() {
-        size--;
+        this.size--;
     }
 
     //Node inner class
@@ -164,6 +205,11 @@ public class SinglyLinkedList<T> {
         public Node(T data, Node<T> next) {
             this.data = data;
             this.next = next;
+        }
+
+        public Node() {
+            this.data = null;
+            this.next = null;
         }
 
         //Getters and Setters

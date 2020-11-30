@@ -7,8 +7,6 @@ public class MainApplication {
     public static void main(String[] args) {
         //Given
         SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
-        Integer expectedData = 96;
-        Integer expectedIndex = 3;
 
         //When
         list.add(16);
@@ -16,7 +14,6 @@ public class MainApplication {
         list.add(34);
         list.add(568);
         list.add(103);
-        list.insert(expectedData, expectedIndex);
 
         list.print();
     }

@@ -9,11 +9,11 @@ import org.junit.jupiter.api.Test;
  */
 public class SinglyLinkedListTest {
     //Given
-    private SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+    private SinglyLinkedList<Integer> list;
 
     @BeforeEach
     void setUp() {
-
+        list = new SinglyLinkedList<>();
     }
 
     @Test
@@ -28,12 +28,21 @@ public class SinglyLinkedListTest {
 
     @Test
     void remove() {
+        //When
+        list.add(16);
+        list.add(29);
+        list.add(34);
+        list.add(568);
+        list.add(103);
+        list.remove(1);
+
+        //Then
+
     }
 
     @Test
     void contains() {
         //Given
-        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
         Integer expected = 55;
 
         //When
@@ -53,7 +62,6 @@ public class SinglyLinkedListTest {
     @Test
     void find() {
         //Given
-        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
         Integer expectedData = 96;
         Integer expectedIndex = 3;
 
@@ -72,7 +80,6 @@ public class SinglyLinkedListTest {
     @Test
     void size() {
         //Given
-        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
         Integer expectedSize = 5;
 
         //When
@@ -90,7 +97,6 @@ public class SinglyLinkedListTest {
     @Test
     void get() {
         //Given
-        SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
         Integer expectedData = 96;
         Integer expectedIndex = 3;
 
@@ -104,10 +110,6 @@ public class SinglyLinkedListTest {
 
         //Then
         Assertions.assertEquals(expectedData, list.get(expectedIndex));
-    }
-
-    @Test
-    void testAdd() {
     }
 
     @Test
